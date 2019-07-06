@@ -1,3 +1,6 @@
+.vscode
+venv
+douglas-klos.assignment.3.zip
 *pycache*
 *solution*
 *.idea*
