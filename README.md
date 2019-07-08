@@ -1,3 +1,10 @@
+# Assignment 3
+
+* Completed the base assignment and the optional of executing make_time.py.
+* Also added another script as a sanity check that will run, but is prevented from doing
+so by the webserver, as executing random user input is a terrible idea.
+* Everything is working on my end, if you encounter any problems please let me know.
+
 # SOCKET HTTP SERVER
 
 Once you're done, you should be able to start the web server inside the homework directory using `python -u http_server.py` and then point your web browser at locations like:
@@ -5,12 +12,11 @@ Once you're done, you should be able to start the web server inside the homewor
   * http://localhost:10000/a_web_page.html
   * http://localhost:10000/images/sample_1.png
 
-and see the corresponding file located under homework/webroot. Take a moment to look into the homework/webroot and see these files. 
+and see the corresponding file located under homework/webroot. Take a moment to look into the homework/webroot and see these files.
 
 Inside this repository you'll find the http_server.py file. I've added enough stub code for the missing functions to let the server run. And there are more tests for you to make pass!
 
 You do NOT need to execute the `make_time.py` Python file. When a web user visits `http://localhost:1000/make_time.py` you only need to _serve up_ the contents of that file. But if you'd like to take on a challenge, then you _can_ choose to execute the file and serve up the result of performing that execution.
-
 
 ## Building the Response
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import unittest
 import os
 import http_server
@@ -53,7 +54,7 @@ class TestCase(unittest.TestCase):
         content, mime_type = http_server.response_path(path)
 
         self.assertEqual(b"text/html", mime_type)
-        
+
         with open(os.path.join("webroot", "a_web_page.html"), "rb") as f:
             self.assertEqual(f.read(), content)
 
@@ -61,6 +62,7 @@ class TestCase(unittest.TestCase):
         path = "/"
 
         content, mime_type = http_server.response_path(path)
+        # print(content)
 
         self.assertIn(b"favicon.ico", content)
         self.assertIn(b"make_time.py", content)
